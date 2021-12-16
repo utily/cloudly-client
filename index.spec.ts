@@ -1,7 +1,7 @@
-import * as library from "./index"
+import { Client } from "./index"
 
-describe("library", () => {
-	it("a", () => {
-		expect(library.a).toEqual(42)
+describe("cloudly-client", () => {
+	it("create", () => {
+		expect(Client.create()).toMatchObject({ a: 12 })
 	})
 })

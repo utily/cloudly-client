@@ -1,12 +1,12 @@
 {
-	"name": "@utily/library-template",
-	"version": "0.0.3",
-	"description": "Template library for Typescript.",
-	"author": "Utily Contributors",
+	"name": "cloudly-client",
+	"version": "0.0.0",
+	"description": "Generic REST client library for specialization.",
+	"author": "Simon Mika",
 	"license": "MIT",
-	"repository": "https://github.com/utily/library-template",
+	"repository": "https://github.com/utily/cloudly-client",
 	"bugs": {
-		"url": "https://github.com/utily/library-template/issues"
+		"url": "https://github.com/utily/cloudly-client/issues"
 	},
 	"homepage": "https://github.com/utily",
 	"private": false,
@@ -67,5 +67,9 @@
 		"ts-jest": "^27.1.1",
 		"typescript": "^4.5.4",
 		"watch": "^1.0.2"
+	},
+	"dependencies": {
+		"cloud-http": "^0.0.36",
+		"gracely": "^0.0.44"
 	}
 }

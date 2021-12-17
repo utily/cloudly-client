@@ -27,9 +27,9 @@
 		"transform": {
 			"^.+\\.(j|t)sx?$": "ts-jest"
 		},
-		"transformIgnorePatterns": [
-			"<rootDir>/node_modules/(?!(cryptly|authly|isoly|gracely)/.*)"
-		],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!(cryptly|authly|isoly|gracely|cloud-http|cloud-router|cloud-formdata)/.*)"
+    ],
 		"testEnvironment": "node",
 		"testRegex": "((\\.|/)(test|spec))(\\.|\\/.+)(jsx?|tsx?)$",
 		"testPathIgnorePatterns": [

@@ -1,5 +1,5 @@
 import * as gracely from "gracely"
-import * as http from "cloud-http"
+import * as http from "cloudly-http"
 
 export class Connection {
 	onError?: (error: gracely.Error, request: http.Request) => Promise<boolean>

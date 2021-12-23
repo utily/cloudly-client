@@ -69,6 +69,6 @@
 		"watch": "^0.13.0"
 	},
 	"dependencies": {
-		"cloudly-http": "^0.0.40"
+		"cloudly-http": "^0.0.41"
 	}
 }

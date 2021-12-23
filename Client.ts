@@ -1,7 +1,7 @@
 import * as http from "cloudly-http"
 import { Collection } from "./Collection"
 
-export class Client<Error = void> extends Collection<Error> {
+export class Client<Error = never> extends Collection<Error> {
 	set onError(value: ((request: http.Request, response: http.Response) => Promise<boolean>) | undefined) {
 		this.client.onError = value
 	}
@@ -25,7 +25,11 @@ export class Client<Error = void> extends Collection<Error> {
 		super(client)
 		this.client.onUnauthorized = async () => this.onUnauthorized != undefined && (await this.onUnauthorized(this))
 	}
-	static create<T = void, Error = void>(url?: string, key?: string, load?: (connection: http.Client) => T): Client & T {
+	static create<T = Record<string, any>, Error = never>(
+		url?: string,
+		key?: string,
+		load?: (connection: http.Client) => T
+	): Client & T {
 		const client = new http.Client<Error>(url, key)
 		const result = new Client(client)
 		if (load)

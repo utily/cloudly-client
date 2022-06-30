@@ -6,10 +6,10 @@
 		"sourceRoot": "../",
 		"outDir": "dist",
 		"baseUrl": ".",
-		"paths": { "*": ["types/*"] },
-		"allowSyntheticDefaultImports":true
+		"allowSyntheticDefaultImports":true,
+		"types": []
 	},
 	"files": [
-		"index.ts"
+		"index.ts",
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"name": "cloudly-rest",
-	"version": "0.0.12",
+	"version": "0.0.13",
 	"description": "Generic REST client library for specialization.",
 	"author": "Simon Mika",
 	"license": "MIT",

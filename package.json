@@ -64,6 +64,7 @@
 		"eslint": "^8.25.0",
 		"eslint-plugin-prettierx": "github:utily/eslint-plugin-prettierx#utily-20220323",
 		"eslint-plugin-simple-import-sort": "^8.0.0",
+		"isomorphic-fetch": "^3.0.0",
 		"jest": "^29.2.0",
 		"prettierx": "github:utily/prettierx#utily-20220323",
 		"rimraf": "^3.0.2",

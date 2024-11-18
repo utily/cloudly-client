@@ -1,4 +1,4 @@
-import * as http from "cloudly-http"
+import { http } from "cloudly-http"
 import { Collection } from "./Collection"
 
 export class Client<Error = never> extends Collection<Error> {

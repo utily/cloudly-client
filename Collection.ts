@@ -1,4 +1,4 @@
-import * as http from "cloudly-http"
+import { http } from "cloudly-http"
 
 export class Collection<Error = never> {
 	protected constructor(protected client: http.Client<Error>) {}
